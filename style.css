@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.inside{
+    width: 100%;
+    height: 730px;
+    display: flex;
+    
+}
+.left{
+    width: 50%;
+    height: 730px;
+    box-shadow: 4px 4px solid rgb(218, 232, 69);
+    background-image: url(./pexels-moose-photos-170195-1037998.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    width: 50%;
+    height: 730px;
+    box-shadow: 4px 4px solid rgb(217, 208, 208);
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    
+  
+    
+}
+.left h1{
+    color: rgb(252, 43, 6);
+    line-height: 85px;
+    text-shadow: 10px 10px 10px 10px  solid black;
+    -webkit-text-stroke: 3px solid rgb(247, 4, 4);
+    font-weight: bold;
+}
+.greenbox{
+    width: 85%;
+    height: 650px;
+    background: transparent;
+    border: 8px solid rgb(63, 218, 25);
+    padding: 15px;
+    border-radius: 12px;
+}
+#profile{
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e921b3;
+    text-shadow: 10px 10px 10px 10px  solid black;
+}
+.same{
+    color: #1504d5;
+    text-shadow: 10px 10px 10px 10px  solid black;
+    
+}
+li a{
+    font-size: 20px;
+     color: #1504d5;
+    
+   
+    font-weight: bold;
+}
+ol{
+    margin-left: 70px;
+    font-size: 25px;
+    
+    line-height: 60px;
+    margin-top: 5px;
+    font-weight: bolder;
+    color: rgb(20, 1, 20);
+    text-shadow: 3px 3px solid rgb(5, 5, 5);
+    align-items: center;
+    
+}
+.h1{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: rgb(238, 31, 114);
+}
+.h2{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+
+/* ------------------------------------480px Responsive-------------------- */
+
+@media (max-width: 480px) {
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.inside{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    width: 100%;
+    height: auto;
+}
+.left h1{
+    font-size: 13px;
+}
+.right{
+    width: 100%;
+    height: auto;
+}
+.right h1{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right a{
+    text-align: center;
+    font-size: 12px;
+}
+ol{
+    text-align: center;
+    padding-left: 0;
+    margin-left: 40px;
+}
+}
